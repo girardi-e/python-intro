@@ -48,6 +48,7 @@ print(lucky_numbers)
 
 students.pop()
 lucky_numbers.pop(4)
+del students[3]
 # students.clear()
 
 # Look for an item
