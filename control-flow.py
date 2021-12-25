@@ -35,3 +35,12 @@ def num_info(num):
 
 num_info(3)
 
+# ternary operator -> [if true] if expression else [if false]
+age = 18
+can_vote = True if age >= 18 else False
+print(can_vote)
+
+
+
+
+
