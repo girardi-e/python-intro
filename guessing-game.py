@@ -21,12 +21,14 @@ while guess_count < guess_limit:
         print("*" * 50)
         print("CONGRATS! You've guessed the right number!")
         print("*" * 50)
+        break
     else:
         if guess_count < guess_limit:
             print("Wrong number!")
             print("Try again!")
+else:
 
-print("")
-print("Sorry! You've run out of guesses.")
-print("")
-print(f"The secret number was: {secret_number}")
+    print("")
+    print("Sorry! You've run out of guesses.")
+    print("")
+    print(f"The secret number was: {secret_number}")
