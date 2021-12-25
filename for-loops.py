@@ -17,3 +17,17 @@ for num in range(0, 11, 2):
 hex_colors = {"white": "#FFF", "black": "#000", "gray": "#999"}
 for label, hex_code in hex_colors.items():
     print(f"{label}:{hex_code}")
+
+# continue & break keywords
+
+names = ["Lucy", "Monica", "Alex", "Nina", "Jimmy"]
+for name in names:
+    if len(name) != 4:
+        continue
+
+    print(f"Hello, {name}")
+
+    if name == "Nina":
+        break
+
+print("Done!")
