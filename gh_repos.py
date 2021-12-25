@@ -23,9 +23,16 @@ def repos_with_most_stars(languages, sort="stars", order="desc"):
 
     response = requests.get(api_search_url, params=parameters)
 
-    response_json = response.json()["items"]
+    # handling errors
+    status_code = response.status_code
 
-    return response_json
+    if status_code != 200:
+        raise RuntimeError(
+            f"Something went wrong! Status code was: {status_code}"
+        )
+    else:
+        response_json = response.json()["items"]
+        return response_json
 
 
 if __name__ == "__main__":
