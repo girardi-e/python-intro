@@ -1,19 +1,20 @@
+from pprint import pprint
+
 # Create an empty list
 empty_list = []
 another_empty_list = list()
-
 
 # Create a new list with items
 students = ["Karen", "Jill", "Mark", "Steve", "Monica"]
 new_students = ["Jimmy", "Maggie"]
 lucky_numbers = [3, 3, 7, 13, 33, 107]
 
-print(students)
+# pretty print for long lists
+pprint(students)
 print(students[3])
 
 # updating a list item
 students[3] = "Sarah"
-
 
 # slicing returns a new list
 print(students[:2])
